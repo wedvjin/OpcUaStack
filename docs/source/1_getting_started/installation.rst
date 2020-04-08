@@ -33,13 +33,20 @@ the root directory of the sources:
 
   $ sh build.sh -t local
 
+Set the relevant paths for binaries and libraries:
+
+::
+
+  $ export PATH=$PATH:$HOME/.ASNeG/usr/bin
+  $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.ASNeG/usr/lib/
 
 By default, the installation path is $HOME/.ASNeG. You can change it at any moment:
 
 ::
 
-  $ sh build.sh -t local -i /path/witch/you/prefer
+  $ sh build.sh -t local -i /path/which/you/prefer
 
+And setting the paths approprietly.
 
 **Windows (Visual Studio)**
 
@@ -52,6 +59,12 @@ is suitable for your target platform (e.g. Native x86) the following command:
 
   $ build.bat -t local
 
+Set the relevant paths for binaries and libraries:
+
+::
+
+  $ set PATH=%PATH%;C:\ASNeG\usr\lib\
+  $ set PATH=%PATH%;C:\ASNeG\usr\bin\
 
 By default, the installation path is C:\\ASNeG. You can change it by typing:
 
@@ -59,6 +72,7 @@ By default, the installation path is C:\\ASNeG. You can change it by typing:
 
   $ build.bat -t local -i C:\path\witch\you\prefer
 
+And setting the paths approprietly.
 
 **Windows (MinGW)**
 
